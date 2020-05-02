@@ -1,0 +1,86 @@
+<html>
+
+<head>
+	<title> Victory's Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+	<header>
+		<h1> Welcome to My Website</h1>
+		<nav>
+			<ul>
+				<li><a class="item active" href="#">Home</a></li>
+				<li><a class="item" href="#corona">Corona</a></li>
+				<li><a class="item" href="#who">WHO</a></li>
+				<li><a class="item" href="#about">About Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="box1">
+			<article id="corona" class="rounded">
+				<h2> Tembus 10.118, Ini Sebaran Kasus Positif Corona di Indonesia 30 April 2020 </h2>
+				<img src="assets/images/corona.jpeg" width="50%">
+				<p>
+					Jakarta - Kasus positif virus Corona (COVID-19) di Indonesia mencapai angka 10.118 hari ini. Kasus
+					positif COVID-19 paling banyak berasal dari DKI Jakarta.
+					"Konfirmasi kasus positif pada hari ini 10.118," kata Juru Bicara Pemerintah Terkait Penanganan
+					Wabah Virus Corona, Achmad Yurianto, dalam konferensi pers yang ditayangkan YouTube BNPB, Kamis
+					(30/4/2020).
+					Yuri menuturkan jumlah kasus positif itu dominasi pasien berusia 30-59 tahun dengan persentase 54
+					persen. Kemudian disusul pasien berumur 60-79 tahun pada kisaran 16 persen.
+				</p>
+			</article>
+			<article id="who" class="rounded">
+				<h2>Ini Bahan Pembuatan Hand Sanitizer Sesuai Anjuran WHO</h2>
+				<img src="assets/images/hand.jpg" width="50%">
+				<p>
+					JAKARTA, KOMPAS.com - Ketua Tim Pakar Gugus Tugas Penanganan Covid-19 Wiku Adisasmito mengungkap
+					beberapa bahan untuk membuat hand sanitizer secara mandiri sesuai anjuran World Health Organization
+					( WHO). Hal itu ia katakan dalam konferensi persnya di Graha BNPB, Jakarta, Senin (30/3/2020).
+					"Bahan-bahannya adalah ethanol 96 persen, gliserol 98 persen, hidrogen peroksida 3 persen, air
+					steril atau aquades," kata Wiku. Wiku menjelaskan hand sanitizer memang bisa digunakan untuk
+					membantu mencegah penyebaran virus corona yang menyebabkan penyakit Covid-19.
+				</p>
+			</article>
+		</div>
+		<div id="about" class="box2">
+			<aside class="rounded">
+				<h2 align="center"> Tentang Saya </h2>
+				<p> Nama : Victory Herawidatama Esa Putra <img class="boxprofil" src="assets/images/pp.jpg"> </p>
+				<p> TTL : Sragen, 03 September 1999 </p>
+				<p> Status : Mahasiswa </p>
+				<p> Handphone : +6282264067484 </p>
+				<div class="find">
+				<ul>
+                        <li> <a href="https://github.com/vherawidatama" target="_blank"> <img src="assets/images/gthb.png"></a></li>
+                        <li> <a href="https://facebook.com/victory.bisa399" target="_blank"> <img src="assets/images/fb.png"></a></li>
+                        <li> <a href="https://twitter.com/vherawidatama" target="_blank"> <img src="assets/images/twitter.png"></a></li>
+						<li> <a href="https://www.instagram.com/victory_putra99/" target="_blank"> <img src="assets/images/ig.png"></a></li>
+                </ul>
+				</div>
+			</aside>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; Victory</p>
+	</footer>
+
+	<script>
+
+	var item = document.getElementsByClassName("item");
+
+	for(var i = 0; i < item.length; ++i){
+		item[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+	}
+			
+	</script>
+</body>
+
+</html>
